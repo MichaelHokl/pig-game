@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Archivo", sans-serif;
     background-color: #22CCB2;
     display: flex;
@@ -14,11 +15,11 @@ body{
     flex-direction: column;
 }
 
-.main{
+.main {
     margin-bottom: 35px;
 }
 
-.container{
+.container {
     width: 900px;
     height: 500px;
     background-color: #f3f4f6;
@@ -30,7 +31,7 @@ body{
     border: 4px solid black;
 }
 
-.player-1, .player-2{
+.player-1, .player-2 {
     height: 100%;
     width: 50%;
     display: flex;
@@ -41,26 +42,28 @@ body{
     gap: 50px;
 }
 
-.active{
+.active {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.player-1{
-    border-radius: 15px 0 0 15px
+
+.player-1 {
+    border-radius: 15px 0 0 15px;
 }
-.player-2{
+
+.player-2 {
     border-radius: 0 15px 15px 0;
 }
 
-h1{
+h1 {
     font-size: 48px;
 }
 
-.image, .btn-container{
+.image, .btn-container {
     position: absolute;
     z-index: 2;
 }
 
-.btn-container{
+.btn-container {
     bottom: 20px;
     width: 100%;
     display: flex;
@@ -69,20 +72,20 @@ h1{
     flex-direction: row-reverse;
 }
 
-button{
+button {
     width: 230px;
     font-size: 28px;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
     border: 4px solid black;
     border-radius: 15px;
     background-color: #22CCB2;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.1);
 }
 
-.image{
+.image {
     background-color: #22CCB2;
     border-radius: 15px;
     width: 180px;
@@ -91,15 +94,14 @@ button:hover{
     justify-content: center;
     align-items: center;
     border: 4px solid black;
-    border-radius: 15px;
 }
 
-img{
+img {
     width: auto;
     height: 150px;
 }
 
-.total-score-container{
+.total-score-container {
     width: 120px;
     height: 55px;
     background-color: #22CCB2;
@@ -111,12 +113,12 @@ img{
     margin-bottom: 30px;
 }
 
-.total-score{
+.total-score {
     font-weight: bold;
     font-size: 48px;
 }
 
-.line{
+.line {
     height: 500px;
     width: 4px;
     background-color: black;
@@ -126,21 +128,188 @@ img{
     transform: translate(-50%, -50%);
 }
 
-p{
+p {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-span{
+span {
     margin-top: 20px;
     font-size: 40px;
     font-weight: bold;
 }
 
 .winner {
-  background-color: gold;
-  box-shadow: 0 0 20px gold;
+    background-color: gold;
+    box-shadow: 0 0 20px gold;
 }
 
+/* ---------- Media Queries ---------- */
+
+@media (max-width: 1000px) {
+    .main {
+        font-size: 48px;
+    }
+
+    .container {
+        width: 700px;
+        height: 400px;
+    }
+
+    img {
+        height: 100px;
+    }
+
+    .image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .line {
+        height: 400px;
+    }
+
+    button {
+        width: 170px;
+        font-size: 20px;
+    }
+
+    span {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 715px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .container {
+        width: 500px;
+        height: 600px;
+    }
+
+    .player-1, .player-2 {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .total-score-container {
+        transform: scale(1.3);
+    }
+
+    img {
+        height: 150px;
+    }
+
+    .image {
+        width: 180px;
+        height: 180px;
+        top: 45%;
+    }
+
+    .line {
+        height: 600px;
+    }
+
+    button {
+        width: 180px;
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 525px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 320px;
+        height: 500px;
+    }
+
+    .player-1, .player-2 {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .total-score-container {
+        transform: scale(0.9);
+    }
+
+    img {
+        height: 100px;
+    }
+
+    .image {
+        width: 130px;
+        height: 130px;
+        top: 48%;
+    }
+
+    .line {
+        height: 500px;
+    }
+
+    button {
+        font-size: 20px;
+        width: 130px;
+    }
+
+    span {
+        font-size: 32px;
+    }
+
+    .btn-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 330px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 300px;
+        height: 500px;
+    }
+
+    .player-1, .player-2 {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .total-score-container {
+        transform: scale(0.9);
+    }
+
+    img {
+        height: 100px;
+    }
+
+    .image {
+        width: 130px;
+        height: 130px;
+        top: 48%;
+    }
+
+    .line {
+        height: 500px;
+    }
+
+    button {
+        font-size: 20px;
+        width: 130px;
+    }
+
+    span {
+        font-size: 32px;
+    }
+
+    .btn-container {
+        gap: 15px;
+    }
+}

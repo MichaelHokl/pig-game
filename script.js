@@ -32,7 +32,7 @@ addNumbersBtn.addEventListener("click", () => {
 
 const rollDice = () => {
   const randomNumber = Math.floor(Math.random() * 6) + 1;
-  image.src = `./Images/Dice-${randomNumber}.png`;
+  image.src = `Images/Dice-${randomNumber}.png`;
   currentScore += randomNumber;
   resetCurrentScoreIfOne(randomNumber);
 };

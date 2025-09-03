@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pig's game</title>
-    <link rel="stylesheet"  href="/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <h1 class="main">Pig's Game</h1>
     <div class="container">
-        <div class="line"></div>
-        <div class="player-1 active" id="player-1">
-            <h1>Player 1</h1>
-            <div class="total-score-container">
-                <p class="total-score" id="total-score-player-1">0</p>
-            </div>
-            <div class="rolled-score-container">
-                <p>Your Current Roll:<br><span id="rolled-score-player-1">0</span></p>
-            </div>
+      <div class="line"></div>
+      <div class="player-1 active" id="player-1">
+        <h1>Player 1</h1>
+        <div class="total-score-container">
+          <p class="total-score" id="total-score-player-1">0</p>
         </div>
-        <div class="player-2" id="player-2">
-            <h1>Player 2</h1>
-            <div class="total-score-container">
-                <p class="total-score" id="total-score-player-2">0</p>
-            </div>
-            <div class="rolled-score-container">
-                <p>Your Current Roll:<br><span id="rolled-score-player-2">0</span></p>
-            </div>
+        <div class="rolled-score-container">
+          <p>
+            Your Current Roll:<br /><span id="rolled-score-player-1">0</span>
+          </p>
         </div>
-        <div class="image">
-            <img src="/Images/Dice-1.png" alt="Dice image"/>
+      </div>
+      <div class="player-2" id="player-2">
+        <h1>Player 2</h1>
+        <div class="total-score-container">
+          <p class="total-score" id="total-score-player-2">0</p>
         </div>
-        <div class="btn-container">
-            <button id="add-numbers">Stop Rolling</button>
-            <button id="reset-roll-btn">Roll the Dice</button>
+        <div class="rolled-score-container">
+          <p>
+            Your Current Roll:<br /><span id="rolled-score-player-2">0</span>
+          </p>
         </div>
+      </div>
+      <div class="image">
+        <img src="/Images/Dice-1.png" alt="Dice image" />
+      </div>
+      <div class="btn-container">
+        <button id="add-numbers">Stop Rolling</button>
+        <button id="reset-roll-btn">Roll the Dice</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
